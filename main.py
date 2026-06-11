@@ -1,5 +1,6 @@
-numbers=[2,4,6,8,10]
+print("User Input Calculator")
+data=input("Enter numbers seperated by spaces:")
+numbers=[float(x) for x in data.split()]
 mean=sum(numbers)/len(numbers)
-print("Statistics Calculator")
 print("Numbers:",numbers)
 print("Mean:",mean)
