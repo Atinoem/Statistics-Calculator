@@ -1,12 +1,13 @@
-print("User Input Calculator")
+print("Mode Calculator")
 data=input("Enter numbers seperated by spaces:")
 numbers=[float(x) for x in data.split()]
 numbers.sort()
 print(numbers)
-mid=(len(numbers))//2
-if len(numbers)%2 ==1:
-    median=numbers[mid]
+mode=max(numbers, key=numbers.count)
+if numbers.count(mode) ==1:
+   print("No Mode")
 else:
-    median=(numbers[(mid-1)]+numbers[mid])/2
-print("Median:",median)
+   print("Mode:",mode)
+
+
 
